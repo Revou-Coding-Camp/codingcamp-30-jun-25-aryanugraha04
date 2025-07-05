@@ -1,0 +1,338 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header and Navigation */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.logo-img {
+  height: 32px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #A50000;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  bottom: -8px;
+}
+
+
+/* Page Management */
+.page {
+  display: none;
+  padding: 4rem 0;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-image {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 4rem auto;
+  border-radius: 8px;
+}
+
+/* Headquarters Section */
+.headquarters-section {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.headquarters-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hq-locations {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.location {
+  margin: 1rem;
+}
+
+.location-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  border: 3px solid #ddd;
+}
+
+/* Profile Page */
+.profile-banner {
+  background: linear-gradient(to right, #A50000, #6e0000);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.profile-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.profile-content h3 {
+  color: #A50000;
+  border-bottom: 2px solid #A50000;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Form Section */
+#message-us {
+  padding-top: 4rem; /* Add some space when scrolling to it */
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #A50000;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.radio-group input {
+  margin-right: 0.5rem;
+}
+
+.radio-group label {
+  margin-right: 1.5rem;
+  font-weight: normal;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #A50000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #6e0000;
+}
+
+/* Output Section */
+.output-section {
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.output-section p {
+  margin: 0 0 1rem 0;
+}
+
+.output-section span {
+  font-weight: normal;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      left: 0;
+      background-color: white;
+      box-shadow: 0 4px 2px -2px gray;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links li {
+      text-align: center;
+      margin: 1rem 0;
+  }
+
+  .nav-toggle {
+      display: block;
+  }
+
+  .nav-toggle.active .hamburger {
+      background-color: transparent;
+  }
+
+  .nav-toggle.active .hamburger::before {
+      transform: rotate(45deg) translate(5px, 6px);
+  }
+  
+  .nav-toggle.active .hamburger::after {
+      transform: rotate(-45deg) translate(5px, -6px);
+  }
+
+  .form-container {
+      grid-template-columns: 1fr;
+  }
+
+  .welcome-section h1 {
+      font-size: 2rem;
+  }
+}

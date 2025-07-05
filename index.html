@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main container for the entire application -->
+    <div id="app-container">
+
+        <!-- Navigation Bar -->
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="#home" class="logo">
+                        <img src="logo telyu.png" alt="Telkom University Logo" class="logo-img">
+                        <span>Telkom University</span>
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#profile" class="nav-link">Our Profile</a></li>
+                        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li><a href="#message-us" class="nav-link">Message Us</a></li>
+                    </ul>
+                     <button class="nav-toggle" aria-label="toggle navigation">
+                        <span class="hamburger"></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="page active">
+                <div class="container">
+                    <div class="welcome-section">
+                        <h1 id="welcome-text">Hi, Welcome To TEL-U</h1>
+                        <p>This is My Mini Project</p>
+                    </div>
+                    <img src="gedung rektorat.png" alt="Gedung Rektorat Telkom University" class="hero-image">
+                    <section class="headquarters-section">
+                        <h2>Our Headquarters</h2>
+                        <div class="hq-locations">
+                            <div class="location">
+                                <img src="telkom jakarta.jpg" alt="Telkom University Jakarta" class="location-img">
+                                <p>Jakarta</p>
+                            </div>
+                            <div class="location">
+                                <img src="telkom bandung.jpg" alt="Telkom University Bandung" class="location-img">
+                                <p>Bandung</p>
+                            </div>
+                            <div class="location">
+                                <img src="telkom surabaya.jpg" alt="Telkom University Surabaya" class="location-img">
+                                <p>Surabaya</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Message Us Section is now part of the Home page -->
+                    <section id="message-us">
+                        <div class="form-container">
+                            <div class="form-section">
+                                <h2>Message Us</h2>
+                                <form id="contact-form" novalidate>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dob">Date of Birth</label>
+                                        <input type="date" id="dob" name="dob" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Gender</label>
+                                        <div class="radio-group">
+                                            <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                                            <label for="male">Male</label>
+                                            <input type="radio" id="female" name="gender" value="Perempuan">
+                                            <label for="female">Female</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" name="message" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="submit-btn">Submit</button>
+                                </form>
+                            </div>
+                            <div class="output-section">
+                                <p><strong>Current Time:</strong> <span id="current-time"></span></p>
+                                <hr>
+                                <p><strong>Name:</strong> <span id="output-name"></span></p>
+                                <p><strong>Date of Birth:</strong> <span id="output-dob"></span></p>
+                                <p><strong>Gender:</strong> <span id="output-gender"></span></p>
+                                <p><strong>Message:</strong> <span id="output-message"></span></p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Our Profile Section -->
+            <section id="profile" class="page">
+                 <div class="container">
+                    <div class="profile-banner">
+                        <h2>Our Company</h2>
+                    </div>
+                    <div class="profile-content">
+                        <h3>About Us</h3>
+                        <p>Telkom University adalah perguruan tinggi swasta yang terletak di Bandung, Jawa Barat. Telkom University didirikan pada tanggal 14 Agustus 2013 dan merupakan penggabungan dari empat perguruan tinggi swasta di bawah naungan Yayasan Pendidikan Telkom. Telkom University memiliki visi menjadi research and entrepreneurial university yang bermanfaat bagi masyarakat. </p>
+                        <h3>Vision & Mission</h3>
+                        <p><strong>Vision:</strong>Menjadi National Excellence Entrepreneurial University berbasis SAFE AI pada tahun 2028, yang berkontribusi pada pemenuhan tujuan pembangunan berkelanjutan (sustainable development goals).</p>
+                        <p><strong>Mission:</strong></p>
+                        <ul>
+                            <li>Menyelenggarakan dan mengembangkan pendidikan berbasis SAFE AI berkelas dunia, dan berwawasan kewirausahaan.</li>
+                            <li>Mengakselerasi transformasi digital berbasis SAFE AI dalam mengembangkan dan menyebarluaskan pengetahuan baru dan produk intelektual di bidang teknologi, sains, dan seni yang berkontribusi pada pemenuhan tujuan pembangunan berkelanjutan (sustainable development goals).</li>
+                            <li>Berkolaborasi dengan industri dan pemangku kepentingan lain dalam pengembangan inovasi berbasis SAFE AI yang berkontribusi pada pertumbuhan ekonomi bangsa.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio Section (Placeholder) -->
+            <section id="portfolio" class="page">
+                <div class="container">
+                    <h2>Portfolio</h2>
+                    <p>Our portfolio will be here soon. Stay tuned!</p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>Created By Arya Nugraha</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
